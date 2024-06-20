@@ -1,5 +1,3 @@
-package Object_Oriented_Programming.OOP01_ObjectsAndClasses;
-
 // What is a class ?
 // A class in Java is a blueprint for creating objects.
 

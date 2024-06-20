@@ -1,5 +1,3 @@
-package Basic_Java;
-
 public class StringInJava {
     public static void main(String[] args) {
         String str = "Hello";   // memory for 'str' gets stored in string pool(a special area in heap)

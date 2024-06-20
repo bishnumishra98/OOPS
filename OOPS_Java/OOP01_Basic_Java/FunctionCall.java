@@ -1,5 +1,3 @@
-package Basic_Java;
-
 import java.util.Scanner;
 
 public class FunctionCall {

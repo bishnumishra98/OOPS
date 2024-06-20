@@ -1,5 +1,3 @@
-package Object_Oriented_Programming.OOP01_ObjectsAndClasses;
-
 // What is an object ?
 // An object is instance of a class.
 
