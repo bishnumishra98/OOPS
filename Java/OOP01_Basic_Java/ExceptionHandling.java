@@ -3,8 +3,7 @@ public class ExceptionHandling {
     public static void main(String[] args) {
         try {
             // Code that may throw an exception
-            // Uncomment the below line to see this code running:
-            // int divideByZero = 5 / 0;
+            int divideByZero = 5 / 0;
         } catch (ArithmeticException e) {
             // This block handles the ArithmeticException
             System.out.println("ArithmeticException caught: " + e.getMessage());
