@@ -52,7 +52,7 @@ int main() {
 
     p->f2();   // I am f2 of Sportscar, calls f2() of SportsCar as the pointer 'p' contains address
     // an object of type SportsCar. This happens due to late binding. Late binding is done by
-    // seeing content of pointer, i.e. type of object the pointer points to.
+    // seeing content of pointer, i.e., type of object the pointer points to.
 
     // p->f3();   // compile-time error
     // f3() is early bind with p. So by seeing type of pointer, the compiler tries of find f3()
