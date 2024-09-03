@@ -2,18 +2,28 @@
 // An interface in Java is a blueprint for a class. Interfaces provide a way to achieve abstraction and support multiple inheritance.
 // They define methods that must be implemented by any class that implements the interface.
 
-interface Animal {
-    void sound();   // Abstract method: is a method that is declared without an implementation. The implementation
-                   // of an abstract method is provided by subclasses or implementing classes.
+interface LivingBeing {
+    void breathe();   // Abstract method: is a method that is declared without an implementation. The implementation
+                     // of an abstract method is provided by subclasses or implementing classes.
 }
 
-class Dog implements Animal {
-    public void sound() {
-        System.out.println("Woof");
+interface Animal {
+    void sound();   // abstract class
+}
+
+// Dog class implements only LivingBeing
+class Dog implements LivingBeing {
+    public void breathe() {
+        System.out.println("Dog is breathing.");
     }
 }
 
-class Cat implements Animal {
+// Cat class implements method from both interfaces LivingBeing & Animal. This is how to achieve multiple inheritance in Java.
+class Cat implements LivingBeing, Animal {
+    public void breathe() {
+        System.out.println("Cat is breathing.");
+    }
+
     public void sound() {
         System.out.println("Meow");
     }
@@ -21,10 +31,11 @@ class Cat implements Animal {
 
 public class InterfaceInJava {
     public static void main(String[] args) {
-        Animal myDog = new Dog();
-        Animal myCat = new Cat();
+        Dog myDog = new Dog();
+        Cat myCat = new Cat();
         
-        myDog.sound();   // O/p: Woof
-        myCat.sound();   // O/p: Meow
+        myDog.breathe();   // O/p: Dog is breathing.
+        myCat.breathe();   // O/p: Cat is breathing.
+        myCat.sound();   // o/p: Meow
     }
 }
