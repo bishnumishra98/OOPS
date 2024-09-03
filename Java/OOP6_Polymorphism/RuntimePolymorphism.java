@@ -27,6 +27,8 @@ public class RuntimePolymorphism {
         Animal myDog = new Dog();
         Animal myCat = new Cat();
         
+        // makeSound() function is polymorphic here. The actual method that gets called is determined at
+       // runtime based on the type of the object that the reference variable (myDog or myCat) points to.
         myDog.makeSound();  // o/p: Bark
         myCat.makeSound();  // o/p: Meow
     }
