@@ -2,13 +2,15 @@
 // An interface in Java is a blueprint for a class. Interfaces provide a way to achieve abstraction and support multiple inheritance.
 // They define methods that must be implemented by any class that implements the interface.
 
+// interface of Java is conceptually similar to abstract class of C++.
+// abstract method of Java is conceptually similar to pure virtual functions of C++.
 interface LivingBeing {
     void breathe();   // Abstract method: is a method that is declared without an implementation. The implementation
                      // of an abstract method is provided by subclasses or implementing classes.
 }
 
 interface Animal {
-    void sound();   // abstract class
+    void sound();   // abstract method
 }
 
 // Dog class implements only LivingBeing
