@@ -39,4 +39,12 @@ public class DynamicMethodDispatch {
         // a reference to any of its child classes (Dog, Cat).
         a.makeSound();  // Output will depend on the actual object type (Animal, Dog, or Cat)
     }
+
+    // Extra info: In Java, you can only call static methods directly from another static method. Thus, it is necessary
+    //             to use the 'static' keyword in hearSound() method if you want to call it directly from the main() method.
 }
+
+// o/p:
+// Some sound...
+// Bark
+// Meow
