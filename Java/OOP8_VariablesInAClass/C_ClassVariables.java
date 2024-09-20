@@ -20,12 +20,12 @@ class Car {
 public class C_ClassVariables {
     public static void main(String[] args) {
         // Creating Car objects
-        Car car1 = new Car();
-        Car car2 = new Car();
-        Car car3 = new Car();
+        Car c1 = new Car();
+        Car c2 = new Car();
+        Car c3 = new Car();
 
         // Calling static method to show the total number of cars created
-        // car1.showNumberOfCars();   // this would be appropriate if showNumberOfCars() was a non-static method.
-        Car.showNumberOfCars();
+        // c1.showNumberOfCars();   // this would be appropriate if showNumberOfCars() was a non-static method.
+        Car.showNumberOfCars();   // o/p: Total cars: 3
     }
 }
