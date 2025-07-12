@@ -53,35 +53,35 @@ class Student {
 };
 
 int main() {
-    Student s1;   // new object created by default ctor
+    Student s1;   // o/p: new object created by default ctor
     s1.setStudentData(18, 65);
-    s1.showStudentInfo();
+    s1.showStudentInfo();   // o/p: Age: 18, Weight: 65
 
     // copy constructor will not be called in this case because s2 is made separately, i.e it is
     // not initialized with s1 on creation. Here, an implicit copy assignment operator
     // (an overloaded function made by the compiler) will be called by the compiler. The code to
     // make a copy of the object is automatically generated inside that copy assignment operator
     // by the compiler, unless a custom copy assignment operator is provided.
-    Student s2;   // new object created by default ctor
+    Student s2;   // o/p: new object created by default ctor
     s2 = s1;
-    s2.showStudentInfo();
+    s2.showStudentInfo();   // o/p: Age: 18, Weight: 65
 
     // copy constructor will called only in these two cases:
     // case 1:
-    Student s3 = s1;   // new object created by copy ctor
-    s3.showStudentInfo();
+    Student s3 = s1;   // o/p: new object created by copy ctor
+    s3.showStudentInfo();   // o/p: Age: 18, Weight: 65
     // case 2:
-    Student s4(s1);   // new object created by copy ctor
-    s4.showStudentInfo();
+    Student s4(s1);   // o/p: new object created by copy ctor
+    s4.showStudentInfo();   // o/p: Age: 18, Weight: 65
 
     cout << "\n" << "When age & weight is changed in any one of the object:" << "\n\n";
 
     s4.setStudentData(20, 75);
 
-    s1.showStudentInfo();
-    s2.showStudentInfo();
-    s3.showStudentInfo();
-    s4.showStudentInfo();
+    s1.showStudentInfo();   // o/p: Age: 18, Weight: 65
+    s2.showStudentInfo();   // o/p: Age: 18, Weight: 65
+    s3.showStudentInfo();   // o/p: Age: 18, Weight: 65
+    s4.showStudentInfo();   // o/p: Age: 20, Weight: 75
     
     // Age in every object did not changed because the age pointer in all objects points to different
     // memory locations. Changing the value of one memory block does not affects any other objects.
