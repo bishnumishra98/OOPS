@@ -50,15 +50,15 @@ int main() {
     BoxFactory bfact;
 
     Box b = bfact.getABox(5);
-    cout << "Width of box1: " << b.getWidth() << "cm" << endl;
+    cout << "Width of box1: " << b.getWidth() << "cm" << endl;   // o/p: Width of box1: 5cm
 
     Box c = bfact.getABox(6);
-    cout << "Width of box2: " << c.getWidth() << "cm" << endl;
+    cout << "Width of box2: " << c.getWidth() << "cm" << endl;   // o/p: Width of box2: 6cm
 
     Box d = bfact.getABox(7);
-    cout << "Width of box3: " << d.getWidth() << "cm" << endl;
+    cout << "Width of box3: " << d.getWidth() << "cm" << endl;   // o/p: Width of box3: 7cm
 
-    cout << "Total boxes made: " << bfact.getCount() << endl;
+    cout << "Total boxes made: " << bfact.getCount() << endl;   // o/p: Total boxes made: 3
 
     return 0;
 }
