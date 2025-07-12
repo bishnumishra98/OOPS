@@ -36,9 +36,9 @@ int main() {
     obj1.setData(5, 4);
 
     B obj2;
-    obj2.showData(obj1);
+    obj2.showData(obj1);   // o/p: x = 5, y = 4
 
-    Sum(obj1);
+    Sum(obj1);   // o/p: x + y = 9
 
     return 0;
 }
