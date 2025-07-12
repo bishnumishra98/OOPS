@@ -1,6 +1,6 @@
 There are 4 pillars of OOPs:
 
-1) Data Abstraction (data hiding):
+1) Abstraction (data hiding):
    Abstraction is the process of hiding the implementation details and showing only the essential
    features of an object.
 
