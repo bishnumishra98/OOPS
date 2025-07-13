@@ -30,7 +30,7 @@ class Student {
         // copy constructor
         Student(const Student &s) {
             cout << "new object created by copy ctor" << "\n";
-            // Shallow copy: only copy the pointer, not the data
+            // Shallow copy: only copy the pointer, not the data. The copied pointer can be created in stack or heap, depending on where the object is created.
             age = s.age;
             weight = s.weight;
         }

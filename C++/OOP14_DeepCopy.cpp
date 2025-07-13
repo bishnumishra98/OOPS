@@ -31,7 +31,7 @@ class Student {
         // copy constructor
         Student(const Student &s) {
             cout << "new object created by copy ctor" << "\n";
-            // Deep copy: allocate new memory and copy the data
+            // Deep copy: allocate new memory and copy the data into it. Memory block is created in heap.
             age = new int(*s.age);
             weight = s.weight;
         }
